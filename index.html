@@ -3,9 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>https.shimil | Creator</title>
+<title>https.shimil | Tech Creator</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 *{
@@ -16,159 +19,133 @@
 }
 
 body{
-  background:linear-gradient(135deg,#0f172a,#020617);
-  color:white;
+  background:#000;
+  color:#fff;
 }
 
 /* HERO */
 .hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
   text-align:center;
-  padding:60px 20px;
 }
 
-.hero img{
-  width:130px;
+/* LOGO */
+.logo img{
+  width:100px;
+  height:100px;
   border-radius:50%;
-  border:3px solid #22c55e;
+  object-fit:cover;
+  box-shadow:0 0 25px rgba(255,0,0,0.6);
+  margin-bottom:15px;
 }
 
-.hero h1{
-  margin-top:15px;
-  font-size:28px;
+/* TEXT */
+.hero h2{
+  font-size:32px;
+}
+
+.hero span{
+  color:#38bdf8;
 }
 
 .hero p{
+  margin:8px 0;
   opacity:0.7;
 }
 
-.btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:12px 28px;
-  background:#22c55e;
-  border-radius:30px;
-  text-decoration:none;
-  color:white;
-  transition:0.3s;
-}
-
-.btn:hover{
-  background:#16a34a;
-}
-
-/* APP SECTION */
-.app{
-  padding:50px 20px;
-  text-align:center;
-}
-
-.app-card{
-  background:#111827;
-  padding:20px;
-  border-radius:20px;
-  display:inline-block;
-}
-
-.app-card img{
-  width:220px;
-  border-radius:15px;
-}
-
-/* VIDEO */
-.videos{
-  padding:50px 20px;
-  text-align:center;
-}
-
-.video-grid{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-}
-
-iframe{
-  width:300px;
-  height:180px;
-  margin:10px;
-  border-radius:12px;
-  border:none;
-}
-
-/* SOCIAL */
+/* SOCIAL ICONS */
 .social{
-  text-align:center;
-  padding:40px 20px;
+  margin:15px 0;
 }
 
 .social a{
-  margin:10px;
-  display:inline-block;
-  padding:10px 20px;
-  border-radius:20px;
-  background:#1f2937;
-  color:#38bdf8;
-  text-decoration:none;
+  color:#fff;
+  margin:0 10px;
+  font-size:20px;
+}
+
+/* MENU */
+.menu{
+  width:320px;
+  margin-top:15px;
+}
+
+.box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#1a1a1a;
+  padding:14px;
+  margin:10px 0;
+  border-radius:10px;
+  cursor:pointer;
   transition:0.3s;
 }
 
-.social a:hover{
-  background:#38bdf8;
-  color:black;
+.box i{
+  font-size:18px;
 }
 
-/* FOOTER */
-.footer{
-  text-align:center;
-  padding:20px;
-  opacity:0.5;
+.box:hover{
+  background:#2a2a2a;
+  transform:scale(1.03);
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <div class="hero">
-  <img src="profile.jpg">
-  <h1>https.shimil</h1>
-  <p>Tech Creator | Apps | Reels</p>
-  <a href="#app" class="btn">Download App</a>
-</div>
 
-<!-- APP -->
-<div class="app" id="app">
-  <h2>📱 </h2>
-  <br>
-  <div class="app-card">
-    <img src="app.png">
-    <br>
-    <a href="#" class="btn">Download Now</a>
+  <!-- LOGO -->
+  <div class="logo">
+    <img src="504712866_17949475899002853_4502311467498687392_n.jpg" alt="logo">
   </div>
-</div>
 
-<!-- VIDEOS -->
-<div class="videos">
-  <h2>🎥 Latest Videos</h2>
-  <div class="video-grid">
+  <h2>https<span>shimil</span></h2>
+  <p>Tech • Apps • Websites</p>
 
-    <iframe src="">https://www.instagram.com/https.shimil/reel/DT0FN7mkVC4/</iframe>
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+  <!-- SOCIAL ICONS -->
+  <div class="social">
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-discord"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-telegram"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <!-- MENU -->
+  <div class="menu">
+
+    <div class="box" onclick="openLink('https://example.com/apps')">
+      <i class="fa-solid fa-mobile-screen"></i> APPLICATIONS
+    </div>
+
+    <div class="box" onclick="openLink('https://example.com/software')">
+      <i class="fa-solid fa-laptop-code"></i> SOFTWARES
+    </div>
+
+    <div class="box" onclick="openLink('https://example.com/movies')">
+      <i class="fa-solid fa-film"></i> MOVIE WEBSITES
+    </div>
+
+    <div class="box" onclick="openLink('https://example.com/social')">
+      <i class="fa-solid fa-share-nodes"></i> SOCIALS
+    </div>
 
   </div>
+
 </div>
 
-<!-- SOCIAL -->
-<div class="social">
-  <h2>🔥 Follow Me</h2>
-  <a href="#">Instagram</a>
-  <a href="#">YouTube</a>
-  <a href="#">Telegram</a>
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-  <p>© 2026 https.shimil</p>
-</div>
+<script>
+function openLink(url){
+  window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
