@@ -1,16 +1,172 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-<title>https shimil offical</title>
-<link rel="stylesheet" href="./style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>https.shimil | Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:#fff;
+}
+
+header{
+  padding:20px 10%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header h1{
+  font-size:20px;
+}
+
+nav a{
+  color:#fff;
+  margin-left:20px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.hero{
+  height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  flex-direction:column;
+}
+
+.hero h2{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.hero span{
+  color:#38bdf8;
+}
+
+.hero p{
+  max-width:500px;
+  margin:10px auto;
+  opacity:0.8;
+}
+
+.btn{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  background:#38bdf8;
+  color:#000;
+  font-weight:600;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+section{
+  padding:80px 10%;
+}
+
+h3{
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#1e293b;
+  padding:20px;
+  border-radius:10px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+  font-size:14px;
+  opacity:0.7;
+}
+</style>
 </head>
+
 <body>
-    <h1>Https shimil offical</h1>
-    <p>Welcome Guys</p>
-    <img src="./assets/IMG_3872.webp" alt="">
+
+<header>
+  <h1>Https.shimil</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Soical Media</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Hi, I'm <span>Https Shimil</span></h2>
+  <p>Tech Content Creator</p>
+  <button class="btn">Video Files</button>
+</div>
+
+<section id="about">
+  <h3>About Me</h3>
+  <p>
+    I'm a developer from Kottayam with a background in digital marketing.
+    I build modern, fast, and result-driven websites.
+  </p>
+</section>
+  <section> <h3> Videos</h3>
+  </section>
+<section id="videos">
+  <h3>Videos</h3>
+
+  <div class="video-grid">
+
+    <!-- YouTube Video -->
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+      frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Local Video -->
+    <div class="video-card">
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Another YouTube -->
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+      frameborder="0" allowfullscreen></iframe>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h3>Contact</h3>
+  <p>Email: shimilshaji9@gmail.com</p>
+  <p>Instagram: @https.shimil</p>
+</section>
+
+<footer>
+  © 2026 https.shimil | All Rights Reserved
+</footer>
+
 </body>
 </html>
