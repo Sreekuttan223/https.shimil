@@ -117,8 +117,13 @@ body{
       <i class="fa-solid fa-mobile-screen"></i> ANDRIOD APP
     </div>
 
- <a href="index.html" class="box">
-  <i class="fa-solid fa-house"></i> Back To Home
-</a>
+<div class="box" onclick="openLink('index.html')">
+  <i class="fa-solid fa-house"></i> Back To Home 
+</div>
 
+<script>
+  function openLink(url) {
+    window.location.href = url;
+  }
+</script>
    
