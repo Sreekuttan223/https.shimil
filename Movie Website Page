@@ -119,19 +119,17 @@ body{
   <div class="menu">
 
     <div class="box" onclick="openLink('app.html')">
-      <i class="fa-solid fa-mobile-screen"></i> APPLICATIONS
+      <i class="fa-solid fa-Telegram"></i> Telegram Channel
     </div>
 
     <div class="box" onclick="openLink('https://example.com/software')">
-      <i class="fa-solid fa-laptop-code"></i> SOFTWARES
+      <i class="fa-solid fa-google website"></i> Website 
     </div>
 
-    <div class="box" onclick="openLink('https://example.com/movies')">
-      <i class="fa-solid fa-film"></i> MOVIE WEBSITES
-    </div>
+   
 
-    <div class="box" onclick="openLink('Soical Media.html')">
-      <i class="fa-solid fa-share-nodes"></i> SOCIALS
+    <div class="box" onclick="openLink('....')">
+      <i class="fa-solid fa-home"></i> Back To Home 
     </div>
 
   </div>
