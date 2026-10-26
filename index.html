@@ -82,7 +82,8 @@ aside>*,.row{animation:up .6s both;animation-delay:calc(var(--i,0)*70ms)}
       <a href="#software">Software</a>
       <a href="#movies">Movies</a>
       <a href="#apps">Apps</a>
-      <a href="#socials">Socials</a>
+     <a href="#socials">Socials</a>
+<a href="#collaborations">Brand Collaborations</a>
     </nav>
   </aside>
   <main id="app"></main>
@@ -124,8 +125,7 @@ const row=([t,u,i,s])=>{
   return u?`<a class="row" href="${u}" target="_blank" rel="noopener">${inner}<i class="fa-solid fa-arrow-up-right-from-square go"></i></a>`
           :`<div class="row soon">${inner}<em>Soon</em></div>`;
 };
-document.getElementById('app').innerHTML=S.map(s=>`<section id="${s.id}"><h2>${s.t}</h2><p class="note">${s.n}</p>${
-  s.g.map(g=>`${g.n?`<h3>${g.n}</h3>`:''}<div class="pn">${g.i.map(row).join('')}</div>`).join('')}</section>`).join('')
+document.getElementById('app').innerHTML=S.map(s=>`...`).join('')
   +'<footer>© 2026 http.shimil</footer>';
 document.querySelectorAll('aside>*,.row').forEach((e,i)=>e.style.setProperty('--i',Math.min(i,14)));
 </script>
