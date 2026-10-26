@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>https.shimil | Tech Creator</title>
+<meta name="description" content="Official website of https.shimil: software, apps, movie picks and all social links in one place.">
+<meta name="theme-color" content="#0c1022">
+<meta property="og:title" content="https.shimil | Tech Creator">
+<meta property="og:description" content="Software, apps, movie picks and all my links in one place.">
+<meta property="og:image" content="https://sreekuttan223.github.io/https.shimil/assets/avatar.jpg">
+<link rel="icon" href="assets/avatar.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root{--bg:#0c1022;--sf:#151a30;--ln:#2a3050;--tx:#eef0fa;--mu:#9aa3c4;--ac:#ffd23f;--rd:#ff5a5f}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:400 16px/1.55 'Bricolage Grotesque',system-ui,sans-serif;background:var(--bg);color:var(--tx);min-height:100vh}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.wrap{display:grid;grid-template-columns:minmax(280px,340px) 1fr;gap:64px;max-width:1080px;margin:0 auto;padding:64px 24px}
+aside{position:sticky;top:64px;align-self:start}
+.av{width:124px;height:124px;border-radius:50%;padding:4px;background:conic-gradient(var(--ac),var(--rd),var(--ac));box-shadow:0 0 44px rgba(255,90,95,.35)}
+.av img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:4px solid var(--bg);display:block}
+h1{font-size:clamp(2.5rem,5vw,3.5rem);font-weight:800;letter-spacing:-.035em;line-height:1;margin:26px 0 12px}
+h1 span{color:var(--mu);font-weight:400}
+.tag{color:var(--mu);max-width:30ch}
+.soc{display:flex;gap:10px;margin:24px 0}
+.soc a{width:44px;height:44px;border-radius:50%;border:1px solid var(--ln);display:grid;place-items:center;font-size:18px;transition:.2s}
+.soc a:hover{background:var(--ac);color:#111;border-color:var(--ac)}
+nav a{display:block;padding:10px 0;color:var(--mu);border-bottom:1px solid var(--ln);transition:.2s}
+nav a:hover{color:var(--tx);padding-left:8px}
+section{margin-bottom:52px;scroll-margin-top:32px}
+h2{font-size:1.7rem;font-weight:800;letter-spacing:-.02em}
+.note{color:var(--mu);font-size:.92rem;margin:4px 0 14px}
+h3{font-size:.95rem;font-weight:600;color:var(--mu);margin:22px 0 8px}
+.pn{background:var(--sf);border:1px solid var(--ln);border-radius:16px;overflow:hidden}
+.row{display:flex;align-items:center;gap:14px;padding:14px 18px;border-top:1px solid var(--ln);transition:background .2s}
+.row:first-child{border-top:0}
+a.row:hover{background:rgba(255,210,63,.07)}
+.ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:rgba(255,210,63,.12);color:var(--ac);flex:none}
+.tx{flex:1;min-width:0}
+.tx b{display:block;font-weight:600}
+.tx small{color:var(--mu)}
+.go{color:var(--mu);font-size:.8rem}
+.soon{opacity:.6}
+.soon em{font-style:normal;font-size:.78rem;border:1px solid var(--ln);border-radius:99px;padding:2px 12px;color:var(--mu)}
+footer{color:var(--mu);font-size:.85rem}
+aside>*,.row{animation:up .6s both;animation-delay:calc(var(--i,0)*70ms)}
+@keyframes up{from{opacity:0;transform:translateY(12px)}}
+@media(max-width:820px){.wrap{grid-template-columns:1fr;gap:36px;padding:40px 20px}aside{position:static}}
+@media(prefers-reduced-motion:reduce){aside>*,.row{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside>
+    <div class="av"><img src="assets/avatar.jpg" alt="https.shimil profile photo"></div>
+    <h1><span>https.</span>shimil</h1>
+    <p class="tag">Tech creator. Software, apps and movie picks, all in one place.</p>
+    <div class="soc">
+      <a href="https://www.youtube.com/@shimil_yt" aria-label="YouTube" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.instagram.com/https.shimil/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/18hH4Bvv18/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+    <nav aria-label="Sections">
+      <a href="#software">Software</a>
+      <a href="#movies">Movies</a>
+      <a href="#apps">Apps</a>
+      <a href="#socials">Socials</a>
+    </nav>
+  </aside>
+  <main id="app"></main>
+</div>
+<script>
+/* To add a link: add one line like ['Name','https://link','fa-solid fa-star','Small text'] to a list below.
+   Leave the link empty ('') to show a "Soon" row. */
+const T='Telegram';
+const S=[
+{id:'software',t:'Software',n:'Editors and tools. Most links open Telegram.',g:[
+ {n:'Photo editors',i:[
+  ['Adobe Photoshop','https://t.me/shimilphotoshop','fa-solid fa-image',T],
+  ['Adobe Lightroom','https://t.me/shimiladob','fa-solid fa-sliders',T]]},
+ {n:'Video editors',i:[
+  ['Filmora 15','https://t.me/shimilshaji','fa-solid fa-film',T],
+  ['Adobe Premiere Pro','https://t.me/shimiladobe','fa-solid fa-clapperboard',T],
+  ['DaVinci Resolve','https://www.blackmagicdesign.com/in/products/davinciresolve','fa-solid fa-wand-magic-sparkles','Official site'],
+  ['CapCut','https://t.me/shimilcapcut/3','fa-solid fa-scissors',T]]},
+ {n:'Games',i:[['Games','','fa-solid fa-gamepad','Coming soon']]}]},
+{id:'movies',t:'Movies',n:'These are third-party sites. Open them at your own risk.',g:[{i:[
+  ['TV Series Search Bot','https://t.me/TVSeriesSearchBot','fa-brands fa-telegram','Telegram bot'],
+  ['All-in-one movie site','https://www.bestfreestreaming.org/','fa-solid fa-globe','Website'],
+  ['Cineby','https://www.cineby.sc/','fa-solid fa-globe','Website'],
+  ['123 Movies','https://themoviedb.tv/','fa-solid fa-globe','Website'],
+  ['F Movies','https://goldmoviehd.net/','fa-solid fa-globe','Website']]}]},
+{id:'apps',t:'Apps',n:'Mobile apps are on the way.',g:[{i:[
+  ['iOS app','','fa-brands fa-apple','Coming soon'],
+  ['Android app','','fa-brands fa-android','Coming soon']]}]},
+{id:'socials',t:'Socials',n:'Follow along for new posts and videos.',g:[{i:[
+  ['Instagram','https://www.instagram.com/https.shimil/','fa-brands fa-instagram','@https.shimil'],
+  ['YouTube','https://www.youtube.com/@shimil_yt','fa-brands fa-youtube','@shimil_yt'],
+  ['Facebook','https://www.facebook.com/share/18hH4Bvv18/?mibextid=wwXIfr','fa-brands fa-facebook','Facebook page']]}]}
+];
+const row=([t,u,i,s])=>{
+  const inner=`<span class="ic"><i class="${i}"></i></span><span class="tx"><b>${t}</b><small>${s}</small></span>`;
+  return u?`<a class="row" href="${u}" target="_blank" rel="noopener">${inner}<i class="fa-solid fa-arrow-up-right-from-square go"></i></a>`
+          :`<div class="row soon">${inner}<em>Soon</em></div>`;
+};
+document.getElementById('app').innerHTML=S.map(s=>`<section id="${s.id}"><h2>${s.t}</h2><p class="note">${s.n}</p>${
+  s.g.map(g=>`${g.n?`<h3>${g.n}</h3>`:''}<div class="pn">${g.i.map(row).join('')}</div>`).join('')}</section>`).join('')
+  +'<footer>© 2026 https.shimil</footer>';
+document.querySelectorAll('aside>*,.row').forEach((e,i)=>e.style.setProperty('--i',Math.min(i,14)));
+</script>
+</body>
+</html>
