@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>https.shimil | Tech Creator</title>
+<title>http.shimil | Tech Creator</title>
 <meta name="description" content="Official website of https.shimil: software, apps, movie picks and all social links in one place.">
 <meta name="theme-color" content="#0c1022">
 <meta property="og:title" content="https.shimil | Tech Creator">
@@ -113,7 +113,7 @@ const row=([t,u,i,s])=>{
 };
 document.getElementById('app').innerHTML=S.map(s=>`<section id="${s.id}"><h2>${s.t}</h2><p class="note">${s.n}</p>${
   s.g.map(g=>`${g.n?`<h3>${g.n}</h3>`:''}<div class="pn">${g.i.map(row).join('')}</div>`).join('')}</section>`).join('')
-  +'<footer>© 2026 https.shimil</footer>';
+  +'<footer>© 2026 http.shimil</footer>';
 document.querySelectorAll('aside>*,.row').forEach((e,i)=>e.style.setProperty('--i',Math.min(i,14)));
 </script>
 </body>
